@@ -13,8 +13,7 @@
 		"url": "https://github.com/Norgate-AV-Solutions-Ltd/crestron-ch5-helper/issues"
 	},
 	"files": [
-		"dist",
-		"src"
+		"dist"
 	],
 	"engines": {
 		"node": ">=14"
