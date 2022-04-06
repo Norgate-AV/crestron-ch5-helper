@@ -86,6 +86,53 @@ export enum DigitalState {
 	Csig_Landscape_Orientation_fb = "Csig.Landscape_Orientation_fb",
 	Csig_Lcd_Brt_Auto_Off_fb = "Csig.Lcd_Brt_Auto_Off_fb",
 	Csig_Lcd_Brt_Auto_On_fb = "Csig.Lcd_Brt_Auto_On_fb",
+
+	Csig_Lcd_Brt_High_fb = "Csig.Lcd_Brt_High_fb",
+
+	Csig_Lcd_Brt_Low_fb = "Csig.Lcd_Brt_Low_fb",
+
+	Csig_Lcd_Brt_Med_fb = "Csig.Lcd_Brt_Med_fb",
+
+	Csig_LCD_Day_Mode_fb = "Csig.LCD_Day_Mode_fb",
+	Csig_LCD_Night_Mode_fb = "Csig.LCD_Night_Mode_fb",
+	Csig_LedAccessoryConnected_fb = "Csig.LedAccessoryConnected_fb",
+	Csig_License_Invalid_fb = "Csig.License_Invalid_fb",
+	Csig_License_Valid_fb = "Csig.License_Valid_fb",
+
+	Csig_Muted_fb = "Csig.Muted_fb",
+	Csig_Not_Admin_fb = "Csig.Not_Admin_fb",
+	Csig_Not_Authenticated_fb = "Csig.Not_Authenticated_fb",
+	Csig_Open_App_fb = "Csig.Open_App_fb",
+	Csig_Open_Browser_fb = "Csig.Open_Browser_fb",
+
+	Csig_Portrait_Orientation_fb = "Csig.Portrait_Orientation_fb",
+
+	Csig_Proximity_Sensor_Active_fb = "Csig.Proximity_Sensor_Active_fb",
+	Csig_PTT_fb = "Csig.PTT_fb",
+	Csig_PTT_mode_fb = "Csig.PTT_mode_fb",
+
+	Csig_RedLedControl_fb = "Csig.RedLedControl_fb",
+	Csig_RedStatusBarControl_fb = "Csig.RedStatusBarControl_fb",
+
+	Csig_RF_Reader_Connected_fb = "Csig.RF_Reader_Connected_fb",
+	Csig_RF_Reader_Disconnected_fb = "Csig.RF_Reader_Disconnected_fb",
+	Csig_Ringback_fb = "Csig.Ringback_fb",
+	Csig_Ringing_fb = "Csig.Ringing_fb",
+	Csig_Screensaver_Date_Disable_fb = "Csig.Screensaver_Date_Disable_fb",
+	Csig_Screensaver_Date_Enable_fb = "Csig.Screensaver_Date_Enable_fb",
+	Csig_Screensaver_Indoor_Temperature_Disable_fb = "Csig.Screensaver_Indoor_Temperature_Disable_fb",
+	Csig_Screensaver_Indoor_Temperature_Enable_fb = "Csig.Screensaver_Indoor_Temperature_Enable_fb",
+	Csig_Screensaver_off_fb = "Csig.Screensaver_off_fb",
+	Csig_Screensaver_on_fb = "Csig.Screensaver_on_fb",
+	Csig_Screensaver_Outdoor_Temperature_Disable_fb = "Csig.Screensaver_Outdoor_Temperature_Disable_fb",
+	Csig_Screensaver_Outdoor_Temperature_Enable_fb = "Csig.Screensaver_Outdoor_Temperature_Enable_fb",
+	Csig_Show_Button_Toolbar_fb = "Csig.Show_Button_Toolbar_fb",
+
+	Csig_System_Media_Mute_fb = "Csig.System_Media_Mute_fb",
+	Csig_System_Media_Unmute_fb = "Csig.System_Media_Unmute_fb",
+
+	Csig_Temp_Tenths_Off_fb = "Csig.Temp_Tenths_Off_fb",
+	Csig_Temp_Tenths_On_fb = "Csig.Temp_Tenths_On_fb",
 }
 
 export default DigitalState;
