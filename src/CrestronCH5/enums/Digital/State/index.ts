@@ -133,6 +133,15 @@ export enum DigitalState {
 
 	Csig_Temp_Tenths_Off_fb = "Csig.Temp_Tenths_Off_fb",
 	Csig_Temp_Tenths_On_fb = "Csig.Temp_Tenths_On_fb",
+
+	Csig_Trial_Period_Off_fb = "Csig.Trial_Period_Off_fb",
+	Csig_Trial_Period_On_fb = "Csig.Trial_Period_On_fb",
+	Csig_Voice_Capture_Complete_fb = "Csig.Voice_Capture_Complete_fb",
+	Csig_Voice_Capture_Decoding_fb = "Csig.Voice_Capture_Decoding_fb",
+	Csig_Voice_Capture_Error_fb = "Csig.Voice_Capture_Error_fb",
+	Csig_Voice_Capture_in_Progress_fb = "Csig.Voice_Capture_in_Progress_fb",
+	Csig_Voice_Capture_Recording_fb = "Csig.Voice_Capture_Recording_fb",
+	Csig_Voice_Recognition_Service_Online_fb = "Csig.Voice_Recognition_Service_Online_fb",
 }
 
 export default DigitalState;
