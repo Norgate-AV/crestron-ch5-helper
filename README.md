@@ -1,12 +1,36 @@
-# TSDX User Guide
+# Crestron CH5 Helper
 
-Congrats! You just saved yourself hours of work by bootstrapping this project with TSDX. Let’s get you oriented with what’s here and how to use it.
+<div align="center">
+	<img src="./template/src/assets/crestron-ch5-logo.png" alt="ch5-logo" width="200" />
+</div>
 
-> This TSDX setup is meant for developing libraries (not apps!) that can be published to NPM. If you’re looking to build a Node app, you could use `ts-node-dev`, plain `ts-node`, or simple `tsc`.
+## Why
 
-> If you’re new to TypeScript, checkout [this handy cheatsheet](https://devhints.io/typescript)
+Bla bla bla
 
-## Commands
+## Installation
+
+```sh
+npm install @norgate-av/crestron-ch5-helper
+
+# or
+
+yarn add @norgate-av/crestron-ch5-helper
+```
+
+## Usage
+
+```ts
+import { subscribeState } from "@crestron/ch5-crcomlib";
+import CrestronCH5 from "@norgate-av/crestron-ch5-helper";
+
+subscribeState(
+	CrestronCH5.SignalType.Digital,
+	CrestronCH5.ReservedJoin.Digital.State.Csig_All_Control_Systems_Online_fb,
+	(value: boolean) =>
+		console.log(`Control System ${value ? "Online" : "Offline"}`),
+);
+```
 
 TSDX scaffolds your new library inside `/src`.
 
@@ -63,8 +87,8 @@ TSDX uses [Rollup](https://rollupjs.org) as a bundler and generates multiple rol
 
 Two actions are added by default:
 
-- `main` which installs deps w/ cache, lints, tests, and builds on all pushes against a Node and OS matrix
-- `size` which comments cost comparison of your library on every pull request using [`size-limit`](https://github.com/ai/size-limit)
+-   `main` which installs deps w/ cache, lints, tests, and builds on all pushes against a Node and OS matrix
+-   `size` which comments cost comparison of your library on every pull request using [`size-limit`](https://github.com/ai/size-limit)
 
 ## Optimizations
 
@@ -76,7 +100,7 @@ declare var __DEV__: boolean;
 
 // inside your code...
 if (__DEV__) {
-  console.log('foo');
+	console.log("foo");
 }
 ```
 
