@@ -4,6 +4,9 @@
 	<img src="./template/src/assets/crestron-ch5-logo.png" alt="ch5-logo" width="200" />
 </div>
 
+[Crestron CH5 Reserved Joins](https://sdkcon78221.crestron.com/downloads/rjviewapp/index.html)  
+[Reserve Joins](https://sdkcon78221.crestron.com/sdk/Crestron_HTML5UI/Content/Topics/UI-Reserve-Joins.htm)
+
 ## Why
 
 Bla bla bla
