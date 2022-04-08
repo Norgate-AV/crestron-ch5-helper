@@ -1,7 +1,7 @@
 # Crestron CH5 Helper
 
 <div align="center">
-	<img src="./template/src/assets/crestron-ch5-logo.png" alt="ch5-logo" width="200" />
+	<img src="./assets/crestron-ch5-logo.png" alt="ch5-logo" width="200" />
 </div>
 
 This library defines all the Crestron CH5 signal types and reserved joins into a convenient Javascript object to aid in the development of CH5 projects.
