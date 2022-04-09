@@ -63,7 +63,7 @@
 			"yarn lint:fix",
 			"yarn pretty:fix"
 		],
-		"*.{css,scss,md,html,json}": [
+		"*.{css,scss,md,html,json,yml,yaml}": [
 			"yarn pretty:fix"
 		]
 	},
