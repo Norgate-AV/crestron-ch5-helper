@@ -6,15 +6,9 @@
 
 This library defines all the Crestron CH5 signal types and reserved joins into a convenient Javascript object to aid in the development of CH5 projects.
 
-All of the joins defined in this library come from the [Crestron CH5 Reserved Join Database](https://sdkcon78221.crestron.com/downloads/rjviewapp/index.html).
+All of the joins defined in this library can be found in the [Crestron CH5 Reserved Join Database](https://sdkcon78221.crestron.com/downloads/rjviewapp/index.html).
 
-For further information, check out the [CH5 Reserved Join Documentation](https://sdkcon78221.crestron.com/sdk/Crestron_HTML5UI/Content/Topics/UI-Reserve-Joins.htm).
-
-## Why
-
-Because who wants to remember all those strings 🤷‍♂️
-
-## Installation
+## ⚡️ Installation
 
 ```sh
 npm install @norgate-av/crestron-ch5-helper
@@ -24,7 +18,7 @@ npm install @norgate-av/crestron-ch5-helper
 yarn add @norgate-av/crestron-ch5-helper
 ```
 
-## Usage
+## 🚀 Usage
 
 ```ts
 import { publishEvent, subscribeState } from "@crestron/ch5-crcomlib";
@@ -37,5 +31,13 @@ subscribeState(
 		console.log(`Control System ${value ? "Online" : "Offline"}`),
 );
 
-publishEvent(CrestronCH5.SignalType.Serial);
+publishEvent(
+	CrestronCH5.SignalType.Serial
+	CrestronCH5.ReservedJoin.Serial.Event.Csig_Browser_URL,
+	"https://www.npmjs.com/package/@norgate-av/crestron-ch5-helper"
+);
 ```
+
+For more information, please refer to:
+
+-   [CH5 Reserved Join Documentation](https://sdkcon78221.crestron.com/sdk/Crestron_HTML5UI/Content/Topics/UI-Reserve-Joins.htm)
