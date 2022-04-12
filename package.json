@@ -29,7 +29,7 @@
 		"size": "size-limit",
 		"analyze": "size-limit --why",
 		"clean": "rimraf dist",
-		"semantic-release": "semantic-release --branches master",
+		"semantic-release": "semantic-release",
 		"commit": "git-cz",
 		"pretty:fix": "prettier --write ."
 	},
