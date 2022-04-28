@@ -37,7 +37,11 @@
         "clean": "rimraf dist",
         "semantic-release": "semantic-release",
         "commit": "git-cz",
-        "pretty:fix": "prettier --write ."
+        "pretty:fix": "prettier --write .",
+        "doctoc": "doctoc --title '## Contents 📖' README.md",
+        "contrib:add": "all-contributors add",
+        "contrib:generate": "all-contributors generate",
+        "contrib:check": "all-contributors check"
     },
     "peerDependencies": {},
     "size-limit": [
