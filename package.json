@@ -37,7 +37,11 @@
         "clean": "rimraf dist",
         "semantic-release": "semantic-release",
         "commit": "git-cz",
-        "pretty:fix": "prettier --write ."
+        "pretty:fix": "prettier --write .",
+        "doctoc": "doctoc --title '## Contents 📖' README.md",
+        "contrib:add": "all-contributors add",
+        "contrib:generate": "all-contributors generate",
+        "contrib:check": "all-contributors check"
     },
     "peerDependencies": {},
     "size-limit": [
@@ -53,10 +57,14 @@
     "devDependencies": {
         "@commitlint/cli": "^16.2.3",
         "@commitlint/config-conventional": "^16.2.1",
+        "@semantic-release/changelog": "^6.0.1",
+        "@semantic-release/git": "^10.0.1",
         "@size-limit/preset-small-lib": "^7.0.8",
         "@types/rimraf": "^3.0.2",
+        "all-contributors-cli": "^6.20.0",
         "cz-conventional-changelog": "3.3.0",
-        "husky": "^7.0.4",
+        "doctoc": "^2.1.0",
+        "husky": "^8.0.0",
         "lint-staged": "^12.3.5",
         "rimraf": "^3.0.2",
         "semantic-release": "^19.0.2",

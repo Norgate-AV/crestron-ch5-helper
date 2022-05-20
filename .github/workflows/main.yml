@@ -21,6 +21,8 @@ jobs:
 
       - name: Install deps and build (with cache)
         uses: bahmutov/npm-install@v1
+        with:
+          install-command: yarn --frozen-lockfile --network-timeout 1000000
 
       - name: Lint
         run: yarn lint:fix
@@ -48,6 +50,8 @@ jobs:
 
       - name: Install deps and build (with cache)
         uses: bahmutov/npm-install@v1
+        with:
+          install-command: yarn --frozen-lockfile --network-timeout 1000000
 
       - name: Lint
         run: yarn lint:fix
@@ -63,3 +67,7 @@ jobs:
         env:
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GIT_AUTHOR_NAME: ${{ secrets.SEMANTIC_RELEASE_GIT_NAME }}
+          GIT_AUTHOR_EMAIL: ${{ secrets.SEMANTIC_RELEASE_GIT_EMAIL }}
+          GIT_COMMITTER_NAME: ${{ secrets.SEMANTIC_RELEASE_GIT_NAME }}
+          GIT_COMMITTER_EMAIL: ${{ secrets.SEMANTIC_RELEASE_GIT_EMAIL }}
