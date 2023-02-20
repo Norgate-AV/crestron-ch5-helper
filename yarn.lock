@@ -973,9 +973,9 @@
     yargs "^17.0.0"
 
 "@commitlint/config-conventional@^17.0.0":
-  version "17.0.2"
-  resolved "https://registry.yarnpkg.com/@commitlint/config-conventional/-/config-conventional-17.0.2.tgz#298c9076e25c1e8760f04ee1be8ce43c856a4b72"
-  integrity sha512-MfP0I/JbxKkzo+HXWB7B3WstGS4BiniotU3d3xQ9gK8cR0DbeZ4MuyGCWF65YDyrcDTS3WlrJ3ndSPA1pqhoPw==
+  version "17.4.4"
+  resolved "https://registry.yarnpkg.com/@commitlint/config-conventional/-/config-conventional-17.4.4.tgz#f30b1e5b2e48ce5799a483c200c52f218a98efcc"
+  integrity sha512-u6ztvxqzi6NuhrcEDR7a+z0yrh11elY66nRrQIpqsqW6sZmpxYkDLtpRH8jRML+mmxYQ8s4qqF06Q/IQx5aJeQ==
   dependencies:
     conventional-changelog-conventionalcommits "^5.0.0"
 
