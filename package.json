@@ -70,19 +70,5 @@
         "tsdx": "^0.14.1",
         "tslib": "^2.6.2",
         "typescript": "^5.3.3"
-    },
-    "lint-staged": {
-        "*.{js,jsx,ts,tsx}": [
-            "eslint --fix",
-            "prettier --write"
-        ],
-        "*.{css,scss,md,html,json,yml,yaml}": [
-            "prettier --write"
-        ]
-    },
-    "config": {
-        "commitizen": {
-            "path": "./node_modules/cz-conventional-changelog"
-        }
     }
 }
