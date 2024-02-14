@@ -4,36 +4,41 @@ on: [push]
 
 jobs:
   build:
-    name: Build, lint, and test on Node ${{ matrix.node }} and ${{ matrix.os }}
+    name: Build, lint, and test on Node ${{ matrix.node-version }} and ${{ matrix.os }}
 
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
-        node: ["14.x", "16.x", "17.x"]
+        node-version: ["18.x", "20.x"]
         os: [ubuntu-latest, windows-latest, macOS-latest]
 
     steps:
-      - name: Checkout repo
-        uses: actions/checkout@v2
-
-      - name: Use Node ${{ matrix.node }}
-        uses: actions/setup-node@v2
+      - name: Checkout
+        uses: actions/checkout@v4
         with:
-          node-version: ${{ matrix.node }}
+          persist-credentials: false
 
-      - name: Install deps and build (with cache)
-        uses: bahmutov/npm-install@v1
+      - uses: pnpm/action-setup@v3
         with:
-          install-command: yarn --frozen-lockfile --network-timeout 1000000
+          version: 8
+
+      - name: Setup Node ${{ matrix.node-version }}
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ matrix.node-version }}
+          cache: pnpm
+
+      - name: Install Dependencies
+        run: pnpm install
 
       - name: Lint
-        run: yarn lint:fix
+        run: pnpm lint:fix
 
       - name: Test
-        run: yarn test --ci --coverage --maxWorkers=2
+        run: pnpm test --ci --coverage --maxWorkers=2
 
       - name: Build
-        run: yarn build
+        run: pnpm build
 
   publish:
     runs-on: ubuntu-latest
@@ -42,32 +47,29 @@ jobs:
     needs: [build]
 
     steps:
-      - name: Checkout repo
-        uses: actions/checkout@v2
+      - name: Checkout
+        uses: actions/checkout@v4
         with:
           persist-credentials: false
 
-      - name: Use Node ${{ matrix.node }}
-        uses: actions/setup-node@v2
+      - uses: pnpm/action-setup@v3
         with:
-          node-version: ${{ matrix.node }}
+          version: 8
 
-      - name: Install deps and build (with cache)
-        uses: bahmutov/npm-install@v1
+      - name: Setup Node
+        uses: actions/setup-node@v4
         with:
-          install-command: yarn --frozen-lockfile --network-timeout 1000000
+          node-version-file: .nvmrc
+          cache: pnpm
 
-      - name: Lint
-        run: yarn lint:fix
-
-      - name: Test
-        run: yarn test --ci --coverage --maxWorkers=2
+      - name: Install Dependencies
+        run: pnpm install
 
       - name: Build
-        run: yarn build
+        run: pnpm build
 
       - name: Release
-        run: yarn semantic-release
+        run: pnpm semantic-release
         env:
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
           GITHUB_TOKEN: ${{ secrets.SEMANTIC_RELEASE_TOKEN }}
