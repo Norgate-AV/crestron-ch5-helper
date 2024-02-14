@@ -1,5 +1,5 @@
-import Event from "./Event";
-import State from "./State";
+import Event from "./Event/index.js";
+import State from "./State/index.js";
 
 export const Digital = {
     Event,

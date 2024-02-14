@@ -1,4 +1,4 @@
-import { Digital, Analog, Serial } from "../enums";
+import { Digital, Analog, Serial } from "../enums/index.js";
 
 export const ReservedJoin = {
     Digital,

@@ -1,0 +1,16 @@
+{
+    "entry": {
+        "index": "src/index.ts"
+    },
+    "format": ["esm", "cjs"],
+    "target": "node20",
+    "outDir": "dist",
+    "minify": "terser",
+    "dts": true,
+    "minifyWhitespace": true,
+    "minifyIdentifiers": true,
+    "minifySyntax": true,
+    "treeshake": true,
+    "sourcemap": true,
+    "splitting": true
+}

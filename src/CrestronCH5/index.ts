@@ -1,5 +1,5 @@
-import { SignalType } from "./enums";
-import { ReservedJoin } from "./ReservedJoin";
+import { SignalType } from "./enums/index.js";
+import { ReservedJoin } from "./ReservedJoin/index.js";
 
 export const CrestronCH5 = {
     SignalType,

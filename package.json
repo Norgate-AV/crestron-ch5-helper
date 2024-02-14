@@ -12,6 +12,7 @@
     "main": "dist/index.js",
     "module": "dist/crestron-ch5-helper.esm.js",
     "typings": "dist/index.d.ts",
+    "type": "module",
     "repository": {
         "type": "git",
         "url": "https://github.com/Norgate-AV/crestron-ch5-helper.git"
@@ -28,10 +29,10 @@
     "scripts": {
         "start": "tsdx watch",
         "prebuild": "pnpm clean && pnpm lint:fix",
-        "build": "tsdx build",
-        "test": "tsdx test --passWithNoTests",
-        "lint": "eslint .",
-        "lint:fix": "eslint . --fix",
+        "build": "tsup",
+        "test": "vitest",
+        "lint": "tsc && eslint .",
+        "lint:fix": "tsc && eslint . --fix",
         "prepare": "husky",
         "size": "size-limit",
         "analyze": "size-limit --why",
@@ -60,6 +61,7 @@
         "@semantic-release/changelog": "^6.0.3",
         "@semantic-release/git": "^10.0.1",
         "@size-limit/preset-small-lib": "^11.0.2",
+        "@types/node": "^20.11.17",
         "@typescript-eslint/eslint-plugin": "^7.0.1",
         "@typescript-eslint/parser": "^7.0.1",
         "all-contributors-cli": "^6.20.0",
@@ -72,8 +74,11 @@
         "rimraf": "^5.0.5",
         "semantic-release": "^23.0.2",
         "size-limit": "^11.0.2",
+        "terser": "^5.27.0",
         "tsdx": "^0.14.1",
         "tslib": "^2.6.2",
-        "typescript": "^5.3.3"
+        "tsup": "^8.0.2",
+        "typescript": "^5.3.3",
+        "vitest": "^1.2.2"
     }
 }
