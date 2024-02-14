@@ -14,10 +14,10 @@
     "typings": "dist/index.d.ts",
     "repository": {
         "type": "git",
-        "url": "https://github.com/Norgate-AV-Solutions-Ltd/crestron-ch5-helper.git"
+        "url": "https://github.com/Norgate-AV/crestron-ch5-helper.git"
     },
     "bugs": {
-        "url": "https://github.com/Norgate-AV-Solutions-Ltd/crestron-ch5-helper/issues"
+        "url": "https://github.com/Norgate-AV/crestron-ch5-helper/issues"
     },
     "files": [
         "dist"
