@@ -1,6 +1,13 @@
 name: CI
 
-on: [push]
+on:
+  push:
+    branches: [master, develop]
+
+  pull_request:
+    branches: [master, develop]
+
+  workflow_dispatch:
 
 jobs:
   build:
@@ -16,9 +23,11 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
         with:
+          fetch-depth: 0
           persist-credentials: false
 
-      - uses: pnpm/action-setup@v3
+      - name: Setup PNPM
+        uses: pnpm/action-setup@v3
         with:
           version: 8
 
@@ -32,16 +41,17 @@ jobs:
         run: pnpm install
 
       - name: Lint
-        run: pnpm lint:fix
-
-      - name: Test
-        run: pnpm test
+        run: pnpm lint
 
       - name: Build
         run: pnpm build
 
+      - name: Test
+        run: pnpm test
+
   publish:
     runs-on: ubuntu-latest
+
     if: ${{ github.ref == 'refs/heads/master' }}
 
     needs: [build]
@@ -50,9 +60,11 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
         with:
+          fetch-depth: 0
           persist-credentials: false
 
-      - uses: pnpm/action-setup@v3
+      - name: Setup PNPM
+        uses: pnpm/action-setup@v3
         with:
           version: 8
 
@@ -72,7 +84,7 @@ jobs:
         run: pnpm semantic-release
         env:
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
-          GITHUB_TOKEN: ${{ secrets.SEMANTIC_RELEASE_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GIT_AUTHOR_NAME: ${{ secrets.SEMANTIC_RELEASE_GIT_NAME }}
           GIT_AUTHOR_EMAIL: ${{ secrets.SEMANTIC_RELEASE_GIT_EMAIL }}
           GIT_COMMITTER_NAME: ${{ secrets.SEMANTIC_RELEASE_GIT_NAME }}
