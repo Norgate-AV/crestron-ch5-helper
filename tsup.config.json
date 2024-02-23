@@ -11,6 +11,5 @@
     "minifyIdentifiers": true,
     "minifySyntax": true,
     "treeshake": true,
-    "sourcemap": true,
     "splitting": true
 }
