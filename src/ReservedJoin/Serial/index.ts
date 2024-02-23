@@ -1,9 +1,9 @@
 import Event from "./Event/index.js";
 import State from "./State/index.js";
 
-export const Digital = {
+export const Serial = {
     Event,
     State,
-};
+} as const;
 
-export default Digital;
+export default Serial;

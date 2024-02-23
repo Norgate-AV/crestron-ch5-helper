@@ -1,9 +1,9 @@
 import Event from "./Event/index.js";
 import State from "./State/index.js";
 
-export const Analog = {
+export const Digital = {
     Event,
     State,
-};
+} as const;
 
-export default Analog;
+export default Digital;
