@@ -1,13 +1,7 @@
 import { describe, it, expect } from "vitest";
-import CrestronCH5, {
-    AnalogEvent,
-    AnalogState,
-    DigitalEvent,
-    DigitalState,
-    SerialEvent,
-    SerialState,
-    SignalType,
-} from "../src/index.js";
+import { getCh5ReservedJoins } from "@norgate-av/ch5-join-getter";
+import CrestronCH5 from "../src/index.js";
+import { assertKeyValuePairs } from "./helpers.js";
 
 describe("Crestron CH5 Helper", () => {
     it("should import default export without error", () => {
@@ -18,33 +12,13 @@ describe("Crestron CH5 Helper", () => {
         describe("Analog", () => {
             describe("Event", () => {
                 it("should contain the correct values", () => {
-                    for (const key of Object.keys(
-                        CrestronCH5.ReservedJoin.Analog.Event,
-                    )) {
-                        const value = key.replace(/^Csig_/, "Csig.");
-
-                        expect(
-                            CrestronCH5.ReservedJoin.Analog.Event[
-                                key as keyof typeof AnalogEvent
-                            ],
-                        ).toBe(value);
-                    }
+                    assertKeyValuePairs(CrestronCH5.ReservedJoin.Analog.Event);
                 });
             });
 
             describe("State", () => {
                 it("should contain the correct values", () => {
-                    for (const key of Object.keys(
-                        CrestronCH5.ReservedJoin.Analog.State,
-                    )) {
-                        const value = key.replace(/^Csig_/, "Csig.");
-
-                        expect(
-                            CrestronCH5.ReservedJoin.Analog.State[
-                                key as keyof typeof AnalogState
-                            ],
-                        ).toBe(value);
-                    }
+                    assertKeyValuePairs(CrestronCH5.ReservedJoin.Analog.State);
                 });
             });
         });
@@ -52,33 +26,13 @@ describe("Crestron CH5 Helper", () => {
         describe("Digital", () => {
             describe("Event", () => {
                 it("should contain the correct values", () => {
-                    for (const key of Object.keys(
-                        CrestronCH5.ReservedJoin.Digital.Event,
-                    )) {
-                        const value = key.replace(/^Csig_/, "Csig.");
-
-                        expect(
-                            CrestronCH5.ReservedJoin.Digital.Event[
-                                key as keyof typeof DigitalEvent
-                            ],
-                        ).toBe(value);
-                    }
+                    assertKeyValuePairs(CrestronCH5.ReservedJoin.Digital.Event);
                 });
             });
 
             describe("State", () => {
                 it("should contain the correct values", () => {
-                    for (const key of Object.keys(
-                        CrestronCH5.ReservedJoin.Digital.State,
-                    )) {
-                        const value = key.replace(/^Csig_/, "Csig.");
-
-                        expect(
-                            CrestronCH5.ReservedJoin.Digital.State[
-                                key as keyof typeof DigitalState
-                            ],
-                        ).toBe(value);
-                    }
+                    assertKeyValuePairs(CrestronCH5.ReservedJoin.Digital.State);
                 });
             });
         });
@@ -86,33 +40,13 @@ describe("Crestron CH5 Helper", () => {
         describe("Serial", () => {
             describe("Event", () => {
                 it("should contain the correct values", () => {
-                    for (const key of Object.keys(
-                        CrestronCH5.ReservedJoin.Serial.Event,
-                    )) {
-                        const value = key.replace(/^Csig_/, "Csig.");
-
-                        expect(
-                            CrestronCH5.ReservedJoin.Serial.Event[
-                                key as keyof typeof SerialEvent
-                            ],
-                        ).toBe(value);
-                    }
+                    assertKeyValuePairs(CrestronCH5.ReservedJoin.Serial.Event);
                 });
             });
 
             describe("State", () => {
                 it("should contain the correct values", () => {
-                    for (const key of Object.keys(
-                        CrestronCH5.ReservedJoin.Serial.State,
-                    )) {
-                        const value = key.replace(/^Csig_/, "Csig.");
-
-                        expect(
-                            CrestronCH5.ReservedJoin.Serial.State[
-                                key as keyof typeof SerialState
-                            ],
-                        ).toBe(value);
-                    }
+                    assertKeyValuePairs(CrestronCH5.ReservedJoin.Serial.State);
                 });
             });
         });
@@ -120,14 +54,21 @@ describe("Crestron CH5 Helper", () => {
 
     describe("SignalType", () => {
         it("should contain the correct values", () => {
-            for (const key of Object.keys(CrestronCH5.SignalType)) {
-                const value = key.replace(/^Csig_/, "Csig.");
-
-                expect(
-                    CrestronCH5.SignalType[key as keyof typeof SignalType],
-                ).toBe(value);
-            }
+            expect(CrestronCH5.SignalType.Boolean).toEqual("boolean");
+            expect(CrestronCH5.SignalType.Digital).toEqual("boolean");
+            expect(CrestronCH5.SignalType.Number).toEqual("number");
+            expect(CrestronCH5.SignalType.Analog).toEqual("number");
+            expect(CrestronCH5.SignalType.String).toEqual("string");
+            expect(CrestronCH5.SignalType.Serial).toEqual("string");
+            expect(CrestronCH5.SignalType.Object).toEqual("object");
         });
+    });
+
+    it("should match the latest available reserved joins", async () => {
+        const data = await getCh5ReservedJoins();
+
+        expect(data).toBeDefined();
+        expect(data).toEqual(CrestronCH5.ReservedJoin);
     });
 
     it("should always pass", () => {
