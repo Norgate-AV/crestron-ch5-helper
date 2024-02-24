@@ -14,6 +14,8 @@ export const DigitalEvent = {
     Csig_App_Return: "Csig.App_Return",
 
     Csig_Auto_Answer: "Csig.Auto_Answer",
+    Csig_Auto_Frame_OFF: "Csig.Auto_Frame_OFF",
+    Csig_Auto_Frame_ON: "Csig.Auto_Frame_ON",
     Csig_Aux_1: "Csig.Aux_1",
     Csig_Aux_2: "Csig.Aux_2",
     Csig_Aux_3: "Csig.Aux_3",
@@ -71,8 +73,8 @@ export const DigitalEvent = {
     Csig_BlueLedControl: "Csig.BlueLedControl",
     Csig_BlueStatusBarControl: "Csig.BlueStatusBarControl",
     Csig_Browser_Go_Home: "Csig.Browser_Go_Home",
-    Csig_Browser_Kiosk_Off: "Csig.Browser_kiosk_off",
-    Csig_Browser_Kiosk_On: "Csig.Browser_kiosk_on",
+    Csig_Browser_kiosk_off: "Csig.Browser_kiosk_off",
+    Csig_Browser_kiosk_on: "Csig.Browser_kiosk_on",
 
     Csig_Button_1_Off: "Csig.Button_1_Off",
     Csig_Button_2_Off: "Csig.Button_2_Off",
@@ -89,10 +91,39 @@ export const DigitalEvent = {
     Csig_Button_Toolbar_Disable: "Csig.Button_Toolbar_Disable",
     Csig_Button_Toolbar_Enable: "Csig.Button_Toolbar_Enable",
 
+    Csig_Camera_Down: "Csig.Camera_Down",
+    Csig_Camera_Left: "Csig.Camera_Left",
+    Csig_Camera_Preset_0: "Csig.Camera_Preset_0",
+    Csig_Camera_Preset_1: "Csig.Camera_Preset_1",
+    Csig_Camera_Preset_2: "Csig.Camera_Preset_2",
+    Csig_Camera_Preset_3: "Csig.Camera_Preset_3",
+    Csig_Camera_Preset_4: "Csig.Camera_Preset_4",
+    Csig_Camera_Right: "Csig.Camera_Right",
+    Csig_Camera_Up: "Csig.Camera_Up",
+    Csig_Camera_Zoom_In: "Csig.Camera_Zoom_In",
+    Csig_Camera_Zoom_Out: "Csig.Camera_Zoom_Out",
+
     Csig_Cancel_Voice_Capture: "Csig.Cancel_Voice_Capture",
+    Csig_Capture_Screenshot: "Csig.Capture_Screenshot",
+    Csig_Capture_color_mode_auto: "Csig.Capture_color_mode_auto",
+    Csig_Capture_color_mode_full: "Csig.Capture_color_mode_full",
+    Csig_Capture_color_mode_limited: "Csig.Capture_color_mode_limited",
     Csig_Check_Now: "Csig.Check_Now",
     Csig_Close_Browser: "Csig.Close_Browser",
     Csig_Close_Opened_App: "Csig.Close_Opened_App",
+
+    Csig_Conf_Mic_Vol_Down: "Csig.Conf_Mic_Vol_Down",
+    Csig_Conf_Mic_Vol_Up: "Csig.Conf_Mic_Vol_Up",
+    Csig_Conf_Spkr_Mute_Off: "Csig.Conf_Spkr_Mute_Off",
+    Csig_Conf_Spkr_Mute_On: "Csig.Conf_Spkr_Mute_On",
+    Csig_Conf_Spkr_Mute_Toggle: "Csig.Conf_Spkr_Mute_Toggle",
+    Csig_Conf_Spkr_Vol_Down: "Csig.Conf_Spkr_Vol_Down",
+    Csig_Conf_Spkr_Vol_Up: "Csig.Conf_Spkr_Vol_Up",
+    Csig_Default_Spkr_Mute_Off: "Csig.Default_Spkr_Mute_Off",
+    Csig_Default_Spkr_Mute_On: "Csig.Default_Spkr_Mute_On",
+    Csig_Default_Spkr_Mute_Toggle: "Csig.Default_Spkr_Mute_Toggle",
+    Csig_Default_Spkr_Vol_Down: "Csig.Default_Spkr_Vol_Down",
+    Csig_Default_Spkr_Vol_Up: "Csig.Default_Spkr_Vol_Up",
 
     Csig_Dial: "Csig.Dial",
     Csig_Dial_Star: "Csig.Dial_*",
@@ -114,6 +145,8 @@ export const DigitalEvent = {
     Csig_DisableMulticast: "Csig.DisableMulticast",
     Csig_DisableStream: "Csig.DisableStream",
     Csig_Do_Not_Disturb: "Csig.Do_Not_Disturb",
+    Csig_Docked_Standby_Timeout_Dn: "Csig.Docked_Standby_Timeout_Dn",
+    Csig_Docked_Standby_Timeout_Up: "Csig.Docked_Standby_Timeout_Up",
     Csig_Door_Release: "Csig.Door_Release",
     Csig_Door_Station_Door_Release: "Csig.Door_Station_Door_Release",
     Csig_Door_Station_Preview: "Csig.Door_Station_Preview",
@@ -141,6 +174,12 @@ export const DigitalEvent = {
     Csig_Hard_Button_Brt_Auto_Thresh_Up: "Csig.Hard_Button_Brt_Auto_Thresh_Up",
     Csig_Hide_Button_Toolbar: "Csig.Hide_Button_Toolbar",
     Csig_Hide_Opened_App: "Csig.Hide_Opened_App",
+
+    Csig_Hide_Project: "Csig.Hide_Project",
+    Csig_Image_Mode_Teams: "Csig.Image_Mode_Teams",
+    Csig_Image_Mode_Zoom: "Csig.Image_Mode_Zoom",
+    Csig_Jabra_AF_Intelligent: "Csig.Jabra_AF_Intelligent",
+    Csig_Jabra_AF_V_Director: "Csig.Jabra_AF_V_Director",
 
     Csig_Key_Backlight_High_Level: "Csig.Key_Backlight_High_Level",
     Csig_Key_Backlight_High_Level_Down: "Csig.Key_Backlight_High_Level_Down",
@@ -170,11 +209,29 @@ export const DigitalEvent = {
     Csig_Lcd_Brt_Med_Dn: "Csig.Lcd_Brt_Med_Dn",
     Csig_Lcd_Brt_Med_Up: "Csig.Lcd_Brt_Med_Up",
     Csig_Lcd_Brt_Up: "Csig.Lcd_Brt_Up",
+
+    Csig_Login: "Csig.Login",
+    Csig_Logitech_fw_update_now: "Csig.Logitech_fw_update_now",
+    Csig_Logitech_rightsight_disabled: "Csig.Logitech_rightsight_disabled",
+    Csig_Logitech_rightsight_enabled: "Csig.Logitech_rightsight_enabled",
+    Csig_Logitech_rightsight_toggle: "Csig.Logitech_rightsight_toggle",
+    Csig_Logitech_sync_disabled: "Csig.Logitech_sync_disabled",
+    Csig_Logitech_sync_enabled: "Csig.Logitech_sync_enabled",
+    Csig_Logitech_sync_toggle: "Csig.Logitech_sync_toggle",
+
     Csig_LCD_Day_Mode: "Csig.LCD_Day_Mode",
     Csig_LCD_Night_Mode: "Csig.LCD_Night_Mode",
 
     Csig_Logout: "Csig.Logout",
+    Csig_Movement_Wakes_LCD_Disabled: "Csig.Movement_Wakes_LCD_Disabled",
+    Csig_Movement_Wakes_LCD_Enabled: "Csig.Movement_Wakes_LCD_Enabled",
+    Csig_Mtr_Coordinated_Meetings: "Csig.Mtr_Coordinated_Meetings",
     Csig_Muted: "Csig.Muted",
+
+    Csig_Occupancy_Sensor_Connected_: "Csig.Occupancy_Sensor_Connected_",
+    Csig_Occupancy_Sensor_Disconnected: "Csig.Occupancy_Sensor_Disconnected",
+    Csig_Occupancy_Status_Occupied: "Csig.Occupancy_Status_Occupied",
+    Csig_Occupancy_Status_Vacant: "Csig.Occupancy_Status_Vacant",
 
     Csig_Open_App: "Csig.Open_App",
     Csig_Open_Browser: "Csig.Open_Browser",
@@ -182,14 +239,31 @@ export const DigitalEvent = {
     Csig_page_all: "Csig.page_all",
     Csig_Panic: "Csig.Panic",
 
+    Csig_Polycom_TT_Disabled: "Csig.Polycom_TT_Disabled",
+    Csig_Polycom_TT_Enable_Group_Framing:
+        "Csig.Polycom_TT_Enable_Group_Framing",
+    Csig_Polycom_TT_Enable_Talker_Framing_:
+        "Csig.Polycom_TT_Enable_Talker_Framing_",
+    Csig_Polycom_TT_High_Sensitivity: "Csig.Polycom_TT_High_Sensitivity",
+    Csig_Polycom_TT_Low_Sensitivity: "Csig.Polycom_TT_Low_Sensitivity",
+    Csig_Polycom_TT_Medium_Margin_: "Csig.Polycom_TT_Medium_Margin_",
+    Csig_Polycom_TT_Medium_Sensitivity: "Csig.Polycom_TT_Medium_Sensitivity",
+    Csig_Polycom_TT_Tight_Margin: "Csig.Polycom_TT_Tight_Margin",
+    Csig_Polycom_TT_Wide_Margin_: "Csig.Polycom_TT_Wide_Margin_",
+    Csig_Power_Timeout_Dn: "Csig.Power_Timeout_Dn",
+    Csig_Power_Timeout_Up: "Csig.Power_Timeout_Up",
+
     Csig_Preview: "Csig.Preview",
 
     Csig_PTT: "Csig.PTT",
     Csig_PTT_mode: "Csig.PTT_mode",
+    Csig_Panel_Occupancy_Occupied: "Csig.Panel_Occupancy_Occupied",
+    Csig_Panel_Occupancy_Vacant: "Csig.Panel_Occupancy_Vacant",
     Csig_Redial: "Csig.Redial",
     Csig_RedLedControl: "Csig.RedLedControl",
     Csig_RedStatusBarControl: "Csig.RedStatusBarControl",
     Csig_Reject: "Csig.Reject",
+    Csig_Resume_from_Standby: "Csig.Resume_from_Standby",
 
     Csig_Screensaver_Date_Disable: "Csig.Screensaver_Date_Disable",
     Csig_Screensaver_Date_Enable: "Csig.Screensaver_Date_Enable",
@@ -199,11 +273,15 @@ export const DigitalEvent = {
         "Csig.Screensaver_Indoor_Temperature_Enable",
     Csig_Screensaver_off: "Csig.Screensaver_off",
     Csig_Screensaver_on: "Csig.Screensaver_on",
+    Csig_Sensor_Occupancy_Occupied: "Csig.Sensor_Occupancy_Occupied",
+    Csig_Sensor_Occupancy_Vacant: "Csig.Sensor_Occupancy_Vacant",
     Csig_Screensaver_Outdoor_Temperature_Disable:
         "Csig.Screensaver_Outdoor_Temperature_Disable",
     Csig_Screensaver_Outdoor_Temperature_Enable:
         "Csig.Screensaver_Outdoor_Temperature_Enable",
     Csig_Show_Button_Toolbar: "Csig.Show_Button_Toolbar",
+    Csig_Show_Project: "Csig.Show_Project",
+    Csig_Standby: "Csig.Standby",
     Csig_Standby_Timeout_Down: "Csig.Standby_Timeout_Down",
     Csig_Standby_Timeout_Up: "Csig.Standby_Timeout_Up",
     Csig_Start_Voice_Capture: "Csig.Start_Voice_Capture",
@@ -213,6 +291,19 @@ export const DigitalEvent = {
     Csig_System_Media_Volume_Up: "Csig.System_Media_Volume_Up",
     Csig_Temp_Tenths_Off: "Csig.Temp_Tenths_Off",
     Csig_Temp_Tenths_On: "Csig.Temp_Tenths_On",
+
+    Csig_UCENGINE_auto_zoom_speed_fast: "Csig.UCENGINE_auto_zoom_speed_fast",
+    Csig_UCENGINE_auto_zoom_speed_fastest:
+        "Csig.UCENGINE_auto_zoom_speed_fastest",
+    Csig_UCENGINE_auto_zoom_speed_medium:
+        "Csig.UCENGINE_auto_zoom_speed_medium",
+    Csig_UCENGINE_auto_zoom_speed_slow: "Csig.UCENGINE_auto_zoom_speed_slow",
+    Csig_UCENGINE_auto_zoom_speed_slowest:
+        "Csig.UCENGINE_auto_zoom_speed_slowest",
+    Csig_Wallmount_Docking_Station_Force_Panel_Release:
+        "Csig.Wallmount_Docking_Station_Force_Panel_Release",
+    Csig_Windows_Update_Enable_ON: "Csig.Windows_Update_Enable_ON",
+    Csig_Zoom_nightly_reboot: "Csig.Zoom_nightly_reboot",
 } as const;
 
 export type DigitalEvent = ObjectTypes<typeof DigitalEvent>;
