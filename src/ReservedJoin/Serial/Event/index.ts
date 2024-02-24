@@ -1,6 +1,7 @@
 import { ObjectTypes } from "../../../@types/index.js";
 
 export const SerialEvent = {
+    Csig_Admin_Account_Username: "Csig.Admin_Account_Username",
     Csig_App_Data_URI: "Csig.App_Data_URI",
     Csig_Browser_Homepage: "Csig.Browser_Homepage",
     Csig_Browser_URL: "Csig.Browser_URL",
@@ -12,6 +13,7 @@ export const SerialEvent = {
 
     Csig_Manifest_URL: "Csig.Manifest_URL",
     Csig_MulticastAddress: "Csig.MulticastAddress",
+    Csig_Occupancy_Sensor_IP_Address: "Csig.Occupancy_Sensor_IP_Address",
     Csig_Room_Name: "Csig.Room_Name",
     Csig_Screensaver_Image_URL: "Csig.Screensaver_Image_URL",
     Csig_Screensaver_Logo_URL: "Csig.Screensaver_Logo_URL",
