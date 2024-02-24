@@ -12,8 +12,8 @@ devDependencies:
     specifier: ^18.6.2
     version: 18.6.2
   "@norgate-av/ch5-join-getter":
-    specifier: ^1.0.0
-    version: 1.0.0
+    specifier: ^1.0.1
+    version: 1.0.1
   "@semantic-release/changelog":
     specifier: ^6.0.3
     version: 6.0.3(semantic-release@23.0.2)
@@ -849,10 +849,10 @@ packages:
       fastq: 1.17.1
     dev: true
 
-  /@norgate-av/ch5-join-getter@1.0.0:
+  /@norgate-av/ch5-join-getter@1.0.1:
     resolution:
       {
-        integrity: sha512-hbaE0qG7tx94wMMPL+G9RN0IL9Ga9UmQYmXe7NrnfVKpE60Ee7O/t12FkX7qYlpStfj8Uc5jcieVmzCek3tFeg==,
+        integrity: sha512-xshwdH4OjSkh4o4yDjlruaWf79inJ6BeTXxfpSYgGimuqsGmmB8qkkNhNWHJD5sAq+9onyeL7/CvQsKU7hzv4Q==,
       }
     engines: { node: ">=20" }
     dependencies:

@@ -7,7 +7,7 @@ describe("Check CH5 Joins", () => {
         const data = await getCh5ReservedJoins();
 
         expect(data).toBeDefined();
-        expect(data).toEqual(CrestronCH5.ReservedJoin);
+        expect(data.ReservedJoin).toEqual(CrestronCH5.ReservedJoin);
     });
 
     it("should always pass", () => {
