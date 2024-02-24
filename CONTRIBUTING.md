@@ -2,14 +2,14 @@
 
 Thank you for your interest in contributing to this project! Any contribution is welcome and invited! 🙌
 
-If you are proposing a new feature, make sure to [open an issue](https://github.com/Norgate-AV-Solutions-Ltd/react-hooks/issues/new/choose) to make sure it is inline with the project goals.
+If you are proposing a new feature, make sure to [open an issue](https://github.com/Norgate-AV/crestron-ch5-helper/issues/new/choose) to make sure it is inline with the project goals.
 
 ## Setup :technologist:
 
 1.  Fork this repository to your own GitHub account and clone the development branch to your local device:
 
     ```bash
-    git clone -b develop https://github.com/Norgate-AV-Solutions-Ltd/crestron-ch5-helper.git
+    git clone -b develop https://github.com/Norgate-AV/crestron-ch5-helper.git
     cd crestron-ch5-helper
     ```
 

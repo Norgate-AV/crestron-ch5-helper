@@ -1,15 +1,15 @@
 # Crestron CH5 Helper :muscle:
 
 <div align="center">
-	<img src="./assets/crestron-ch5-logo.png" alt="ch5-logo" width="200" />
+    <img src="./assets/crestron-ch5-logo.png" alt="ch5-logo" width="200" />
 </div>
 
 ---
 
-[![CI](https://github.com/Norgate-AV-Solutions-Ltd/crestron-ch5-helper/actions/workflows/main.yml/badge.svg?branch=develop)](https://github.com/Norgate-AV-Solutions-Ltd/crestron-ch5-helper/actions/workflows/main.yml)
+[![CI](https://github.com/Norgate-AV/crestron-ch5-helper/actions/workflows/main.yml/badge.svg?branch=develop)](https://github.com/Norgate-AV/crestron-ch5-helper/actions/workflows/main.yml)
 [![Conventional Commits](https://img.shields.io/badge/Conventional%20Commits-1.0.0-%23FE5196?logo=conventionalcommits&logoColor=white)](https://conventionalcommits.org)
 [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
-[![GitHub contributors](https://img.shields.io/github/contributors/Norgate-AV-Solutions-Ltd/crestron-ch5-helper)](#contributors)
+[![GitHub contributors](https://img.shields.io/github/contributors/Norgate-AV/crestron-ch5-helper)](#contributors-sparkles)
 [![NPM](https://img.shields.io/npm/v/@norgate-av/crestron-ch5-helper.svg)](https://www.npmjs.com/package/@norgate-av/crestron-ch5-helper)
 [![MIT license](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 
@@ -51,22 +51,22 @@ import { publishEvent, subscribeState } from "@crestron/ch5-crcomlib";
 import CrestronCH5 from "@norgate-av/crestron-ch5-helper";
 
 subscribeState(
-	CrestronCH5.SignalType.Digital,
-	CrestronCH5.ReservedJoin.Digital.State.Csig_All_Control_Systems_Online_fb,
-	(value: boolean) =>
-		console.log(`Control System ${value ? "Online" : "Offline"}`),
+ CrestronCH5.SignalType.Digital,
+ CrestronCH5.ReservedJoin.Digital.State.Csig_All_Control_Systems_Online_fb,
+ (value: boolean) =>
+  console.log(`Control System ${value ? "Online" : "Offline"}`),
 );
 
 publishEvent(
-	CrestronCH5.SignalType.Serial
-	CrestronCH5.ReservedJoin.Serial.Event.Csig_Browser_URL,
-	"https://www.npmjs.com/package/@norgate-av/crestron-ch5-helper"
+ CrestronCH5.SignalType.Serial
+ CrestronCH5.ReservedJoin.Serial.Event.Csig_Browser_URL,
+ "https://www.npmjs.com/package/@norgate-av/crestron-ch5-helper"
 );
 ```
 
 ## Team :soccer:
 
-This project is maintained by the following person(s) and a bunch of [awesome contributors](https://github.com/Norgate-AV-Solutions-Ltd/crestron-ch5-helper/graphs/contributors).
+This project is maintained by the following person(s) and a bunch of [awesome contributors](https://github.com/Norgate-AV/crestron-ch5-helper/graphs/contributors).
 
 <table>
   <tr>
