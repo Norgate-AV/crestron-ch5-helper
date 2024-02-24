@@ -1,7 +1,7 @@
 {
     "name": "@norgate-av/crestron-ch5-helper",
     "description": "A helper collection of Crestron CH5 constants 😀",
-    "version": "1.2.0",
+    "version": "2.0.0",
     "keywords": [
         "ch5",
         "crestron",
