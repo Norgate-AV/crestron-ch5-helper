@@ -35,11 +35,5 @@
     },
     "[dotenv]": {
         "editor.formatOnSave": false
-    },
-    "json.schemas": [
-        {
-            "url": "./tsup.schema.json",
-            "fileMatch": ["package.json", "tsup.config.json"]
-        }
-    ]
+    }
 }
