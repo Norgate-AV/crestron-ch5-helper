@@ -11,6 +11,27 @@ export const DigitalState = {
 
     Csig_All_Control_Systems_Online_fb: "Csig.All_Control_Systems_Online_fb",
 
+    Csig_Annotation_Brush_Med_fb: "Csig.Annotation_Brush_Med_fb",
+    Csig_Annotation_Brush_Thick_fb: "Csig.Annotation_Brush_Thick_fb",
+    Csig_Annotation_Brush_Thin_fb: "Csig.Annotation_Brush_Thin_fb",
+    Csig_Annotation_Color_Black_fb: "Csig.Annotation_Color_Black_fb",
+    Csig_Annotation_Color_Blue_fb: "Csig.Annotation_Color_Blue_fb",
+    Csig_Annotation_Color_Cyan_fb: "Csig.Annotation_Color_Cyan_fb",
+    Csig_Annotation_Color_Erase_fb: "Csig.Annotation_Color_Erase_fb",
+    Csig_Annotation_Color_Green_fb: "Csig.Annotation_Color_Green_fb",
+    Csig_Annotation_Color_Magenta_fb: "Csig.Annotation_Color_Magenta_fb",
+    Csig_Annotation_Color_Red_fb: "Csig.Annotation_Color_Red_fb",
+    Csig_Annotation_Color_White_fb: "Csig.Annotation_Color_White_fb",
+    Csig_Annotation_Color_Yellow_fb: "Csig.Annotation_Color_Yellow_fb",
+    Csig_Annotation_Disable_fb: "Csig.Annotation_Disable_fb",
+    Csig_Annotation_Enable_fb: "Csig.Annotation_Enable_fb",
+    Csig_Annotation_Freeze_Off_fb: "Csig.Annotation_Freeze_Off_fb",
+    Csig_Annotation_Freeze_On_fb: "Csig.Annotation_Freeze_On_fb",
+    Csig_Annotation_Remote_Override_Off_fb:
+        "Csig.Annotation_Remote_Override_Off_fb",
+    Csig_Annotation_Remote_Override_On_fb:
+        "Csig.Annotation_Remote_Override_On_fb",
+
     Csig_Authenticated_fb: "Csig.Authenticated_fb",
     Csig_Authentication_On_fb: "Csig.Authentication_On_fb",
     Csig_Auto_Answer_fb: "Csig.Auto_Answer_fb",
@@ -218,6 +239,9 @@ export const DigitalState = {
         "Csig.UCENGINE_auto_zoom_speed_slow_fb",
     Csig_UCENGINE_auto_zoom_speed_slowest_fb:
         "Csig.UCENGINE_auto_zoom_speed_slowest_fb",
+
+    Csig_Vnc_Client_Connected_fb: "Csig.Vnc_Client_Connected_fb",
+    Csig_Vnc_Client_Disconnected_fb: "Csig.Vnc_Client_Disconnected_fb",
 
     Csig_Voice_Capture_Complete_fb: "Csig.Voice_Capture_Complete_fb",
     Csig_Voice_Capture_Decoding_fb: "Csig.Voice_Capture_Decoding_fb",

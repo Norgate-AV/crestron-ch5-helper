@@ -10,6 +10,26 @@ export const DigitalEvent = {
     Csig_All_Audio_Volume_Down: "Csig.All_Audio_Volume_Down",
     Csig_All_Audio_Volume_Up: "Csig.All_Audio_Volume_Up",
 
+    Csig_Annotation_Brush_Med: "Csig.Annotation_Brush_Med",
+    Csig_Annotation_Brush_Thick: "Csig.Annotation_Brush_Thick",
+    Csig_Annotation_Brush_Thin: "Csig.Annotation_Brush_Thin",
+    Csig_Annotation_Clear: "Csig.Annotation_Clear",
+    Csig_Annotation_Color_Black: "Csig.Annotation_Color_Black",
+    Csig_Annotation_Color_Blue: "Csig.Annotation_Color_Blue",
+    Csig_Annotation_Color_Cyan: "Csig.Annotation_Color_Cyan",
+    Csig_Annotation_Color_Erase: "Csig.Annotation_Color_Erase",
+    Csig_Annotation_Color_Green: "Csig.Annotation_Color_Green",
+    Csig_Annotation_Color_Magenta: "Csig.Annotation_Color_Magenta",
+    Csig_Annotation_Color_Red: "Csig.Annotation_Color_Red",
+    Csig_Annotation_Color_White: "Csig.Annotation_Color_White",
+    Csig_Annotation_Color_Yellow: "Csig.Annotation_Color_Yellow",
+    Csig_Annotation_Disable: "Csig.Annotation_Disable",
+    Csig_Annotation_Enable: "Csig.Annotation_Enable",
+    Csig_Annotation_Freeze_Off: "Csig.Annotation_Freeze_Off",
+    Csig_Annotation_Freeze_On: "Csig.Annotation_Freeze_On",
+    Csig_Annotation_Remote_Override_Off: "Csig.Annotation_Remote_Override_Off",
+    Csig_Annotation_Remote_Override_On: "Csig.Annotation_Remote_Override_On",
+
     Csig_Answer: "Csig.Answer",
     Csig_App_Return: "Csig.App_Return",
 
@@ -252,6 +272,8 @@ export const DigitalEvent = {
     Csig_Polycom_TT_Wide_Margin_: "Csig.Polycom_TT_Wide_Margin_",
     Csig_Power_Timeout_Dn: "Csig.Power_Timeout_Dn",
     Csig_Power_Timeout_Up: "Csig.Power_Timeout_Up",
+
+    Csig_Start_Vnc_Client: "Csig.Start_Vnc_Client",
 
     Csig_Preview: "Csig.Preview",
 
