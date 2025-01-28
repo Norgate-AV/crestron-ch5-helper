@@ -20,6 +20,8 @@ export const SerialEvent = {
     Csig_Screensaver_Video_URL: "Csig.Screensaver_Video_URL",
 
     Csig_User_Login_Password: "Csig.User_Login_Password",
+
+    Csig_Vnc_Client_Url: "Csig.Vnc_Client_Url",
 } as const;
 
 export type SerialEvent = ObjectTypes<typeof SerialEvent>;

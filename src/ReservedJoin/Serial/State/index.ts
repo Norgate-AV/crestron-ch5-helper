@@ -55,6 +55,8 @@ export const SerialState = {
 
     Csig_Voice_Capture_Result_fb: "Csig.Voice_Capture_Result_fb",
     Csig_Windows_build_fb: "Csig.Windows_build_fb",
+
+    Csig_Vnc_Client_Url_fb: "Csig.Vnc_Client_Url_fb",
 } as const;
 
 export type SerialState = ObjectTypes<typeof SerialState>;
