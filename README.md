@@ -6,7 +6,7 @@
 
 ---
 
-[![CI](https://github.com/Norgate-AV/crestron-ch5-helper/actions/workflows/main.yml/badge.svg?branch=develop)](https://github.com/Norgate-AV/crestron-ch5-helper/actions/workflows/main.yml)
+[![CI](https://github.com/Norgate-AV/crestron-ch5-helper/actions/workflows/ci.yml/badge.svg?branch=master)](https://github.com/Norgate-AV/crestron-ch5-helper/actions/workflows/ci.yml)
 [![Conventional Commits](https://img.shields.io/badge/Conventional%20Commits-1.0.0-%23FE5196?logo=conventionalcommits&logoColor=white)](https://conventionalcommits.org)
 [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
 [![GitHub contributors](https://img.shields.io/github/contributors/Norgate-AV/crestron-ch5-helper)](#contributors-sparkles)
@@ -26,11 +26,11 @@ For more information, check out the [CH5 Reserved Join Documentation](https://sd
 
 ## Contents 📖
 
--   [Installation :zap:](#installation-zap)
--   [Usage :rocket:](#usage-rocket)
--   [Team :soccer:](#team-soccer)
--   [Contributors :sparkles:](#contributors-sparkles)
--   [LICENSE :balance_scale:](#license-balance_scale)
+- [Installation :zap:](#installation-zap)
+- [Usage :rocket:](#usage-rocket)
+- [Team :soccer:](#team-soccer)
+- [Contributors :sparkles:](#contributors-sparkles)
+- [LICENSE :balance_scale:](#license-balance_scale)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
