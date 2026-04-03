@@ -7,7 +7,22 @@ describe("Crestron CH5 Helper", () => {
         expect(CrestronCH5).toBeDefined();
     });
 
+    it("should have exactly the expected top-level keys", () => {
+        expect(Object.keys(CrestronCH5)).toEqual([
+            "SignalType",
+            "ReservedJoin",
+        ]);
+    });
+
     describe("ReservedJoin", () => {
+        it("should have exactly the expected signal type keys", () => {
+            expect(Object.keys(CrestronCH5.ReservedJoin)).toEqual([
+                "Digital",
+                "Analog",
+                "Serial",
+            ]);
+        });
+
         describe("Analog", () => {
             describe("Event", () => {
                 it("should contain the correct values", () => {
@@ -52,6 +67,28 @@ describe("Crestron CH5 Helper", () => {
     });
 
     describe("SignalType", () => {
+        it("should have exactly 7 keys", () => {
+            expect(Object.keys(CrestronCH5.SignalType)).toHaveLength(7);
+        });
+
+        it("Boolean and Digital should resolve to the same value", () => {
+            expect(CrestronCH5.SignalType.Boolean).toEqual(
+                CrestronCH5.SignalType.Digital,
+            );
+        });
+
+        it("Number and Analog should resolve to the same value", () => {
+            expect(CrestronCH5.SignalType.Number).toEqual(
+                CrestronCH5.SignalType.Analog,
+            );
+        });
+
+        it("String and Serial should resolve to the same value", () => {
+            expect(CrestronCH5.SignalType.String).toEqual(
+                CrestronCH5.SignalType.Serial,
+            );
+        });
+
         it("should contain the correct values", () => {
             expect(CrestronCH5.SignalType.Boolean).toEqual("boolean");
             expect(CrestronCH5.SignalType.Digital).toEqual("boolean");
