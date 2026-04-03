@@ -8,6 +8,5 @@ export default defineConfig({
             return path + extension;
         },
         include: ["tests/**/*.test.ts"],
-        exclude: ["tests/check.test.ts"],
     },
 });

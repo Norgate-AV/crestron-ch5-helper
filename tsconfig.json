@@ -18,5 +18,5 @@
         "noEmit": true,
         "ignoreDeprecations": "6.0"
     },
-    "include": ["src/**/*", "tests/**/*", "vitest.config.ts"]
+    "include": ["src/**/*", "tests/**/*", "scripts/**/*", "vitest.config.ts"]
 }
