@@ -51,6 +51,10 @@ jobs:
             git diff --stat
           fi
 
+      - name: Test
+        if: steps.changes.outputs.changed == 'true'
+        run: pnpm test
+
       - name: Commit and push
         if: steps.changes.outputs.changed == 'true'
         run: |
