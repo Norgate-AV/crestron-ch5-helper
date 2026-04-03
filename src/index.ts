@@ -1,7 +1,7 @@
 import { SignalType } from "./SignalType/index.js";
 import { ReservedJoin } from "./ReservedJoin/index.js";
 
-const CrestronCH5 = {
+export const CrestronCH5 = {
     SignalType,
     ReservedJoin,
 } as const;
