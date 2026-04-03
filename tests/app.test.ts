@@ -62,8 +62,4 @@ describe("Crestron CH5 Helper", () => {
             expect(CrestronCH5.SignalType.Object).toEqual("object");
         });
     });
-
-    it("should always pass", () => {
-        expect(true).toBe(true);
-    });
 });

@@ -9,8 +9,4 @@ describe("Check CH5 Joins", () => {
         expect(data).toBeDefined();
         expect(data.ReservedJoin).toEqual(CrestronCH5.ReservedJoin);
     });
-
-    it("should always pass", () => {
-        expect(true).toBe(true);
-    });
 });
