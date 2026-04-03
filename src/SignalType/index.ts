@@ -1,4 +1,5 @@
 import { ObjectTypes } from "../@types/index.js";
+
 export const SignalType = {
     Boolean: "boolean",
     Digital: "boolean",
@@ -10,5 +11,3 @@ export const SignalType = {
 } as const;
 
 export type SignalType = ObjectTypes<typeof SignalType>;
-
-export default SignalType;

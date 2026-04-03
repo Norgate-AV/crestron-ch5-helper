@@ -60,5 +60,3 @@ export const SerialState = {
 } as const;
 
 export type SerialState = ObjectTypes<typeof SerialState>;
-
-export default SerialState;

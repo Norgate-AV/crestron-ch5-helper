@@ -58,5 +58,3 @@ export const AnalogState = {
 } as const;
 
 export type AnalogState = ObjectTypes<typeof AnalogState>;
-
-export default AnalogState;

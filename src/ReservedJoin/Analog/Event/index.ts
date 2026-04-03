@@ -50,5 +50,3 @@ export const AnalogEvent = {
 } as const;
 
 export type AnalogEvent = ObjectTypes<typeof AnalogEvent>;
-
-export default AnalogEvent;

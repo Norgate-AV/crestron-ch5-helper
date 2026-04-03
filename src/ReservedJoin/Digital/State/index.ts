@@ -255,5 +255,3 @@ export const DigitalState = {
 } as const;
 
 export type DigitalState = ObjectTypes<typeof DigitalState>;
-
-export default DigitalState;

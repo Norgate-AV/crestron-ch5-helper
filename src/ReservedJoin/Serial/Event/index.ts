@@ -25,5 +25,3 @@ export const SerialEvent = {
 } as const;
 
 export type SerialEvent = ObjectTypes<typeof SerialEvent>;
-
-export default SerialEvent;

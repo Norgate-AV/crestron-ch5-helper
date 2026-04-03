@@ -329,5 +329,3 @@ export const DigitalEvent = {
 } as const;
 
 export type DigitalEvent = ObjectTypes<typeof DigitalEvent>;
-
-export default DigitalEvent;

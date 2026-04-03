@@ -7,5 +7,3 @@ export const ReservedJoin = {
     Analog,
     Serial,
 } as const;
-
-export default ReservedJoin;
