@@ -52,6 +52,9 @@ importers:
       lint-staged:
         specifier: ^16.4.0
         version: 16.4.0
+      prettier:
+        specifier: ^3.8.1
+        version: 3.8.1
       rimraf:
         specifier: ^6.1.3
         version: 6.1.3
@@ -4942,6 +4945,14 @@ packages:
     engines: { node: ">=10.13.0" }
     hasBin: true
 
+  prettier@3.8.1:
+    resolution:
+      {
+        integrity: sha512-UOnG6LftzbdaHZcKoPFtOcCKztrQ57WkHDeRD9t/PTQtmT0NHSeWWepj6pS0z/N7+08BHFDQVUrfmfMRcZwbMg==,
+      }
+    engines: { node: ">=14" }
+    hasBin: true
+
   pretty-ms@9.3.0:
     resolution:
       {
@@ -9305,6 +9316,8 @@ snapshots:
 
   prettier@2.8.8:
     optional: true
+
+  prettier@3.8.1: {}
 
   pretty-ms@9.3.0:
     dependencies:
